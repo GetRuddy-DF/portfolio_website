@@ -1,0 +1,289 @@
+html
+    box-sizing: border-box
+
+*, *::before, *::after
+    box-sizing: inherit
+
+$main_color: #FFFFFF
+$decoration_color: #bdbdbd
+$text: #C9A96E
+$desc_color: #171717
+$shadow_color: #666666
+$author_color: #B1B1B1
+$media_color: #F8F9FA
+$media_text: #999999
+.wrapper
+    width: 770px
+    min-height: 770px
+    margin-left: 375px
+.navbar
+    display: flex
+    align-items: center
+    padding: 15px 40px
+.blog
+    margin-top: 45px
+    position: absolute 
+.menu
+    display: flex
+    flex-wrap: wrap
+    margin-left: auto
+    padding-top: 15px
+    &_item
+        padding-left: 10px
+        list-style-type: none
+    &_link
+        text-decoration: none
+        color: #666666
+        font-style: normal
+        font-weight: 400
+        font-size: 14px
+        line-height: 18px
+        &:hover
+            color: #C9A96E
+.vehicle
+    background: url(/src/img/png/background.png) center center/cover no-repeat
+    width: 100%
+    height: 100%
+.content
+    padding: 500px 375px 0
+    &_subtitle
+        font-style: normal
+        font-weight: 400
+        font-size: 14px
+        line-height: 18px
+        text-transform: uppercase
+        color: $main_color
+    &_title
+        margin: 0
+        margin-top: 15px
+        font-style: normal
+        font-weight: 700
+        font-size: 40px
+        line-height: 50px
+        color: $main_color
+.bottom_title
+    display: flex
+    flex-wrap: wrap
+    margin-bottom: 0
+.gray
+    color: $decoration_color
+.decoration
+    list-style-type: none
+    margin-right: 15px
+    color: $main_color
+.post
+    width: 370px
+    height: 411px
+    &_item
+        padding: 15px 15px 15px 0
+        flex: 0 0 37%
+.big_post
+    width: 770px
+    height: 600px
+    padding-top: 15px
+.post_item-img
+    width: 100%
+.post_item-body
+    text-align: center
+    width: 370px
+    box-shadow: 0 0 10px rgba(0,0,0,0.1)
+    &_title
+        padding-top: 15px
+        font-style: normal
+        font-weight: 400
+        font-size: 12px
+        line-height: 16px
+        text-transform: uppercase
+        color: $text
+    &_subtitle
+        font-style: normal
+        font-weight: 400
+        font-size: 20px
+        line-height: 28px
+        text-align: center
+        color: $desc_color
+    &_descr
+        font-style: normal
+        font-weight: 400
+        font-size: 12px
+        line-height: 16px
+        color: $shadow_color
+        padding: 10px 14px
+.post_item-summer
+    width: 770px
+    height: 212px
+    padding: 25px
+    box-shadow: 0 0 10px rgba(0,0,0,0.1)
+    margin-bottom: 30px
+    &_title
+        font-style: normal
+        font-weight: 400
+        font-size: 12px
+        line-height: 16px
+        text-transform: uppercase
+        color: $text
+    &_subtitle
+        padding: 6px 0 11px 0
+        font-style: normal
+        font-weight: 400
+        font-size: 20px
+        line-height: 26px
+    &_descr
+        font-style: normal
+        font-weight: 400
+        font-size: 12px
+        line-height: 16px
+        padding-bottom: 14px
+    &_full
+        width: 616px
+        font-style: normal
+        font-weight: 400
+        font-size: 14px
+        line-height: 24px
+.secondary
+    max-width: 1170px
+    padding-left: 150px
+    margin-left: auto
+    margin-top: 60px
+    position: relative
+.post-btn
+    width: 270px
+    height: 50px
+    &_text
+        padding: 14px
+        border: 1px solid
+        font-style: normal
+        font-weight: 400
+        font-size: 16px
+        line-height: 16px
+        text-align: center
+.about
+    margin-top: 20px
+    &_body
+        box-shadow: 0 0 10px rgba(0,0,0,0.1)
+    &_title
+        font-style: normal
+        font-weight: 700
+        font-size: 16px
+        line-height: 21px
+        color: $desc_color
+        text-align: center
+        padding: 20px 0 4px
+    &_subtitle
+        font-style: italic
+        font-weight: 400
+        font-size: 14px
+        line-height: 18px
+        text-align: center
+        color: $author_color
+    &_full-text
+        font-style: normal
+        font-weight: 400
+        font-size: 14px
+        line-height: 24px
+        text-align: center
+        color: $desc_color
+        padding: 14px
+    &_title-link
+        border-top: 1px solid
+.link
+    font-style: normal
+    font-weight: 400
+    font-size: 12px
+    line-height: 16px
+    text-transform: uppercase
+    color: $text
+    text-align: center
+    padding: 12px
+.featured
+    margin-top: 70px
+    &_posts
+        padding-top: 20px
+.featured_posts-body
+    text-align: center
+    padding: 15px 14px
+    box-shadow: 0 0 10px rgba(0,0,0,0.1)
+    &_title
+        font-style: normal
+        font-weight: 400
+        font-size: 12px
+        line-height: 16px
+        text-transform: uppercase
+        color: $text
+
+    &_subtitle
+        font-style: normal
+        font-weight: 400
+        font-size: 12px
+        line-height: 16px
+        text-transform: uppercase
+        padding: 4px 10px
+    &_descr
+        font-style: normal
+        font-weight: 400
+        font-size: 12px
+        line-height: 16px
+.categories
+    margin-top: 30px
+.categories-item
+    &_body
+        display: flex
+        justify-content: space-between
+        &_title
+            padding: 15px 0 15px 0
+            font-style: normal
+            font-weight: 400
+            font-size: 14px
+            line-height: 18px
+            color: $shadow_color
+        &_numb
+            padding: 15px 0 15px 0
+            font-style: normal
+            font-weight: 400
+            font-size: 14px
+            line-height: 18px
+            text-align: justify
+            color: $shadow_color
+.border_bott
+    border-bottom: 1px solid $shadow_color
+    width: 240px
+.summer_post
+    padding-top: 30px
+.social
+    margin-top: 70px
+    &_menu
+        display: flex
+    &_item
+        width: 88px
+        height: 88px
+        background: $media_color
+.img_logo
+    padding: 10px 36px 7px
+.social_item-body
+    text-align: center
+    &_title
+        font-style: normal
+        font-weight: 400
+        font-size: 12px
+        line-height: 16px
+        color: $media_text
+    &_subtitle
+        font-style: normal
+        font-weight: 400
+        font-size: 12px
+        line-height: 16px
+        color: $media_text
+@media ( max-width: 1920px )
+    .content
+        padding: 500px 170px 0
+    .wrapper
+        margin-left: 170px
+    .secondary
+        padding-left: 250px
+@media ( max-width: 1440px )
+    .content
+        padding: 500px 100px 0
+    .wrapper
+        margin-left: 100px
+    .secondary
+        padding-left: 650px
